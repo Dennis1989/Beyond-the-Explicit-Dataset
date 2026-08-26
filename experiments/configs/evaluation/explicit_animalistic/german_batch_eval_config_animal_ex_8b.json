@@ -1,0 +1,44 @@
+{
+    "evaluations": [
+       
+        {
+            "model_name": "experiments/_basemodels/Llama-3.1-8B-Instruct",
+            "output_dir": "models/llama-3.1-instruct-8b_lora_finetuned_explicit_animalistic_german_new",
+            "dataset_path": "experiments/splits/explicit/german/test_german_explicit_animalistic_dehumanization.csv",
+            "prompt_type": "explicit_animalistic",
+            "use_quantization": false,
+            "mode": "zero_shot",
+            "text_column": "displayed_text",
+            "save_results": true,
+            "save_path": "experiments/splits/explicit/german/predictions/german_",
+            "runs": 5
+        },
+        {
+            "model_name": "experiments/_basemodels/Llama-3.1-8B-Instruct",
+            "output_dir": "models/llama-3.1-instruct-8b_lora_finetuned_explicit_animalistic_german_new",
+            "dataset_path": "experiments/splits/explicit/german/test_german_explicit_animalistic_dehumanization.csv",
+            "train_dataset_path": "experiments/few_shots/german/explicit_animalistic",
+            "prompt_type": "explicit_animalistic",
+            "use_quantization": false,
+            "mode": "zero_shot",
+            "text_column": "displayed_text",
+            "save_results": true,
+            "save_path": "experiments/splits/explicit/german/predictions/german_",
+            "num_few_shot_examples": 20,
+            "runs": 5
+        },
+        {
+            "model_name": "experiments/_basemodels/Llama-3.1-8B-Instruct",
+            "output_dir": "models/llama-3.1-instruct-8b_lora_finetuned_explicit_animalistic_german_new",
+            "dataset_path": "experiments/splits/explicit/german/test_german_explicit_animalistic_dehumanization.csv",
+            "prompt_type": "explicit_animalistic",
+            "use_quantization": false,
+            "mode": "fine_tuned",
+            "text_column": "displayed_text",
+            "save_results": true,
+            "save_path": "experiments/splits/explicit/german/predictions/german_",
+            "runs": 5
+        }
+       
+    ]
+} 

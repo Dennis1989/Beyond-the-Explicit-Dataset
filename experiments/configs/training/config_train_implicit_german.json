@@ -1,0 +1,30 @@
+
+{
+  "trainings": 
+[
+    {
+      "model_name": "experiments/_basemodels/Llama-3.1-8B-Instruct",
+      "dataset_paths": ["experiments/splits/implicit/german/train_implicit_animalistic_dehumanization.csv"],
+      "output_dir": "models/llama-3.1-instruct-8b_lora_finetuned_implicit_animalistic_german",
+      "prompt_type": "implicit_animalistic",
+      "use_quantization": false,
+      "batch_size": 4,
+      "gradient_accumulation_steps": 4,
+      "learning_rate": 2e-4,
+      "num_epochs": 4,
+      "num_runs": 5
+  },
+  {
+    "model_name": "experiments/_basemodels/Llama-3.1-8B-Instruct",
+    "dataset_paths": ["experiments/splits/implicit/german/train_implicit_mechanistic_dehumanization.csv"],
+    "output_dir": "models/llama-3.1-instruct-8b_lora_finetuned_implicit_mechanistic_german",
+    "prompt_type": "implicit_mechanistic",
+    "use_quantization": false,
+    "batch_size": 4,
+    "gradient_accumulation_steps": 4,
+    "learning_rate": 2e-4,
+    "num_epochs": 4,
+    "num_runs": 5
+}
+]
+}
